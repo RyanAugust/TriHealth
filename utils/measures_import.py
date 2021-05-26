@@ -8,8 +8,9 @@ import gspread
 from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
 from oauth2client.service_account import ServiceAccountCredentials
+import configparser
+config = configparser.ConfigParser()
 
-athlete = 'Ryan Duecker'
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 creds = ServiceAccountCredentials.from_json_keyfile_name('/Users/ryanduecker/projects/triathlon/golden-cheetah-upload-ec5eca7e3cb2.json', scope)
 
@@ -27,7 +28,7 @@ import time
 from pathlib import Path
 home = str(Path.home())
 
-measures_path = '{home}/Library/Mobile Documents/com~apple~CloudDocs/GoldenCheetah/{athlete}/config/bodymeasures.json'.format(home=home,athlete=athlete)
+measures_path = config['measures_path'].format(athlete=config['athlete'])
 with open(measures_path, 'r') as f:
     original = json.loads(f.read())
     f.close()

@@ -11,8 +11,10 @@ import os
 from pathlib import Path
 import pandas as pd
 import json
+import configparser
 
-hrv_save_dir = '/Users/ryanduecker/Dropbox/Apps/HRV4Training/'
+config = configparser.ConfigParser()
+hrv_save_dir = config['hrv_save_dir']
 
 for a,b,c in os.walk(hrv_save_dir):
     csvs = []
@@ -50,9 +52,7 @@ hrv_df['timestamp_measurement'] = pd.to_datetime(hrv_df['timestamp_measurement']
 
 
 ## Load Measures
-home = str(Path.home())
-athlete = 'Ryan Duecker'
-hrv_path = '{home}/Library/Mobile Documents/com~apple~CloudDocs/GoldenCheetah/{athlete}/config/hrvmeasures.json'.format(home=home,athlete=athlete)
+hrv_path = config['hrv_path'].format(athlete=config['athlete'])
 
 with open(hrv_path, 'r') as f:
     original = json.loads(f.read())

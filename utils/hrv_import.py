@@ -14,7 +14,7 @@ import json
 import configparser
 
 config = configparser.ConfigParser()
-hrv_save_dir = config['hrv_save_dir']
+config.read('config.ini')
 
 for a,b,c in os.walk(hrv_save_dir):
     csvs = []
@@ -52,7 +52,7 @@ hrv_df['timestamp_measurement'] = pd.to_datetime(hrv_df['timestamp_measurement']
 
 
 ## Load Measures
-hrv_path = config['hrv_path'].format(athlete=config['athlete'])
+hrv_path = config['athletes']['hrv_path'].format(athlete=config['athletes']['name'])
 
 with open(hrv_path, 'r') as f:
     original = json.loads(f.read())

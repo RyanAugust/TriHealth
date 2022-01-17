@@ -1,0 +1,29 @@
+set(Front_Wheel,"DT Swiss PR 1400",Equipment="Canyon Ultimate" && Indoor<>1)
+set(Rear_Wheel,"DT Swiss PR 1600",Equipment="Canyon Ultimate" && Indoor<>1)
+set(Front_Tube,"Continental Race #1",Equipment="Canyon Ultimate" && Indoor<>1)
+set(Rear_Tube,"Continental Race #2",Equipment="Canyon Ultimate" && Indoor<>1)
+set(Front_Tire,"Continental GP5000 #1",Equipment="Canyon Ultimate" && Indoor<>1)
+set(Rear_Tire,"Continental GP5000 #2",Equipment="Canyon Ultimate" && Indoor<>1)
+
+set(Cassette,"11-30  (Ultegra) #1",Equipment="Canyon Ultimate" && Indoor<>1)
+set(Cassette,"11-28  (105) #1",Equipment="Canyon Ultimate" && Indoor=1)
+
+set(Chainring,"52-36 (Ultegra) #1",Equipment="Canyon Ultimate")
+
+set(Chain,"Chain 1 (Ultegra)",Equipment="Canyon Ultimate")
+
+set(Frame,"Canyon Ultimate",Equipment="Canyon Ultimate")
+set(Frame,"NordicTrack S15i",Equipment="NordicTrack S15i")
+set(Frame,"Equinox Stages Bike",Equipment="Equinox Stages Bike")
+
+
+
+set(Shoes,"Air Peg 37 #2",Equipment="Air Peg 37 #2")
+set(Shoes,"Air Peg 37 #1",Equipment="Air Peg 37 #1")
+set(Shoes,"Vaporfly Next % #1",Equipment="Vaporfly Next % #1")
+set(Shoes,"Hoka Clifton 8 #1",Equipment="Hoka Clifton 8 #1")
+set(Shoes,"Speedgoat",Equipment="Speedgoat")
+set(Shoes,"Air Peg 36 #4",Equipment="Air Peg 36 #4")
+set(Shoes,"Air Peg 36 #3",Equipment="Air Peg 36 #3")
+set(Shoes,"Air Peg 36 #2",Equipment="Air Peg 36 #2")
+

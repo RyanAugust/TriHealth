@@ -10,7 +10,7 @@ set(Cassette,"11-28  (105) #1",Equipment="Canyon Ultimate" && Indoor=1)
 
 set(Chainring,"52-36 (Ultegra) #1",Equipment="Canyon Ultimate")
 
-set(Chain,"Chain 1 (Ultegra)",Equipment="Canyon Ultimate")
+set(Chain,"Chain #1 (Ultegra)",Equipment="Canyon Ultimate")
 
 set(Frame,"Canyon Ultimate",Equipment="Canyon Ultimate")
 set(Frame,"NordicTrack S15i",Equipment="NordicTrack S15i")
